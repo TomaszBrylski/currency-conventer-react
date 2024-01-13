@@ -2,9 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-::before,
-::after {
+*, ::before, ::after {
   box-sizing: inherit;
 }
 
@@ -17,6 +15,4 @@ html {
   background-image: url("yellowBackground.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
