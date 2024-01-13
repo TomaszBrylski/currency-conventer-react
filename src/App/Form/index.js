@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { curriencies } from "../currencies";
+import { currencies } from "../currencies";
 import { Result } from "./Result";
 import "./style.css";
 
 export const Form = ({ calculateResult, result }) => {
-  const [currency, setCurrency] = useState(curriencies[0].short);
+  const [currency, setCurrency] = useState(currencies[0].short);
   const [amount, setAmount] = useState("");
 
   const onSubmit = (event) => {
@@ -18,7 +18,7 @@ export const Form = ({ calculateResult, result }) => {
       <p>
         <label>
           <spam className="form__labelText">Kwota w zł*:</spam>
-          <imput
+          <input
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
             placeholder="Wpisz kwotę w zł"
@@ -37,7 +37,7 @@ export const Form = ({ calculateResult, result }) => {
             value={currency}
             onChange={({ target }) => setCurrency(target.value)}
           >
-            {curriencies.map((currency) => (
+            {currencies.map((currency) => (
               <option key={currency.short} value={currency.short}>
                 {currency.name}
               </option>
