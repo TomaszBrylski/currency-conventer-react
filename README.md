@@ -13,7 +13,7 @@ The converted amount in foreign currency will appear below, as on the gif.
 
 Link below:
 
-https://tomaszbrylski.github.io/currency-converter/
+https://tomaszbrylski.github.io/currency-conventer-react/
 
 ### Languages / Technologies
 - HTML
@@ -25,7 +25,7 @@ https://tomaszbrylski.github.io/currency-converter/
 
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://tomaszbrylski.github.io/currency-conventer-react/).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
