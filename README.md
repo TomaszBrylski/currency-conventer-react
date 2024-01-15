@@ -2,7 +2,7 @@
 
 ## This simple calculator converts Polish zloty (PLN) to foreign currencies (USD, EURO, GBP).
 
-![Conventer](src/przelicznik.gif)
+![Conventer](src/converter.gif)
 
 You can also test it yourself, it is very easy to use:
 - in the first column (Kwota w Zł) you enter the value of the PLN amount you want to convert,
