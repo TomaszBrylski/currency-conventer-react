@@ -14,14 +14,14 @@ export const Form = ({ calculateResult, result }) => {
 
   return (
     <form className="form" onSubmit={onSubmit}>
-      <h1 className="from__header">Przelicznik walut</h1>
+      <h1 className="form__header">Kalkulator walut</h1>
       <p>
         <label>
           <spam className="form__labelText">Kwota w zł*:</spam>
           <input
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
-            placeholder="Wpisz kwotę w zł"
+            placeholder="Kwota w zł"
             className="form__field"
             type="number"
             required
@@ -46,7 +46,7 @@ export const Form = ({ calculateResult, result }) => {
         </label>
       </p>
       <p>
-        <button className="form__button">Przelicz!</button>
+        <button className="form__button">Przelicz</button>
       </p>
 
       <p className="form__info">Kurs walut z dnia 12.01.2024</p>
