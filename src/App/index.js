@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="app">
-      <Clock></Clock>
+      <Clock/>
       <Form result={result} calculateResult={calculateResult} />
     </div>
   );
