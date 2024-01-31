@@ -8,7 +8,7 @@ export const LabelText = styled.span`
 `;
 
 export const Field = styled.input`
-  border: 1px solid silver;
+  border: 1px solid ${({ theme }) => theme.color.silver};
   padding: 10px;
   width: 100%;
   max-width: 350px;
@@ -18,8 +18,8 @@ export const Field = styled.input`
 export const Button = styled.button`
   width: 100%;
   border: none;
-  background-color: teal;
-  color: white;
+  background-color: ${({ theme }) => theme.color.teal};
+  color: ${({ theme }) => theme.color.white};
   padding: 10px;
   border-radius: 5px;
   transition: 0.3s;
@@ -34,7 +34,7 @@ export const Button = styled.button`
 `;
 
 export const Header = styled.h1`
-  color: teal;
+  color: ${({ theme }) => theme.color.teal};
   text-align: center;
 `;
 
