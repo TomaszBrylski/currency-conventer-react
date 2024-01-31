@@ -17,7 +17,7 @@ Link below:
 
 https://tomaszbrylski.github.io/currency-conventer-react/
 
-### Languages / Technologies
+## Languages / Technologies
 - HTML
 - CSS
 - Flex
