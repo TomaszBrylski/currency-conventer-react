@@ -13,17 +13,24 @@ The converted amount in foreign currency will appear below, as on the gif.
 
 Link below:
 
-## Demo
+### Demo
 
 https://tomaszbrylski.github.io/currency-conventer-react/
 
-### Languages / Technologies
+## Languages / Technologies
 - HTML
 - CSS
 - Flex
 - JavaScript
 - BEM
 - ScreenToGit
+- useState
+- React JS
+- React Hooks
+- immutability Concept
+- Styled Components
+- Axios
+- Async/await
 
 # Getting Started with Create React App
 
