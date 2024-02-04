@@ -26,7 +26,7 @@ export const Form = () => {
     });
   };
 
-  const [currency, setCurrency] = useState("EUR");
+  const [currency, setCurrency] = useState("PLN");
   const [amount, setAmount] = useState("");
 
   const onSubmit = (event) => {
@@ -68,7 +68,7 @@ export const Form = () => {
                 value={currency}
                 onChange={({ target }) => setCurrency(target.value)}
               >
-                {Object.keys(ratesData.rates).map((currency) => (
+                {ratesData.rates && Object.keys(ratesData.rates).map((currency) => (
                   <option key={currency} value={currency}>
                     {currency}
                   </option>
@@ -80,7 +80,7 @@ export const Form = () => {
             <Button>Przelicz</Button>
           </p>
 
-          <Info>Kursy walut pobierane są z EBC</Info>
+          <Info>Kursy walut pobierane są z Europejskiego Banku Centralnego</Info>
 
           <Result result={result} />
         </>
