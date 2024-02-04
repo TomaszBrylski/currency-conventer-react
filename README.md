@@ -24,6 +24,13 @@ https://tomaszbrylski.github.io/currency-conventer-react/
 - JavaScript
 - BEM
 - ScreenToGit
+- useState
+- React JS
+- React Hooks
+- immutability Concept
+- Styled Components
+- Axios
+- Async/await
 
 # Getting Started with Create React App
 
