@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Result } from "./Result";
 import {
   Button,
@@ -17,7 +17,7 @@ export const Form = () => {
   const ratesData = useRatesData();
 
   const calculateResult = (currency, amount) => {
-    const rate = ratesData.rates[currency];
+    const rate = ratesData.rates[currency].value;
 
     setResult({
       sourceAmount: +amount,
@@ -26,7 +26,7 @@ export const Form = () => {
     });
   };
 
-  const [currency, setCurrency] = useState("PLN");
+  const [currency, setCurrency] = useState("EUR");
   const [amount, setAmount] = useState("");
 
   const onSubmit = (event) => {
