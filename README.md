@@ -1,6 +1,6 @@
 # Currency-Converter
 
-## This simple calculator converts Polish zloty (PLN) to foreign currencies (USD, EURO, GBP).
+## It is a simple application that converts currencies from all over the world - the data is downloaded via an API.
 
 ![Conventer](converter.gif)
 
