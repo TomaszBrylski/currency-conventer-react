@@ -6,7 +6,7 @@
 
 You can also test it yourself, it is very easy to use:
 - in the first column (Kwota w Zł) you enter the value of the PLN amount you want to convert,
-- in the second column (Waluta) you choose the foreign currency you are interested in (EURO, USD, GBP),
+- in the second column (Waluta) you choose the foreign currency you are interested in (EURO, USD, GBP and others),
 - click on the Recalculate button (Przelicz).
 
 The converted amount in foreign currency will appear below, as on the gif.
