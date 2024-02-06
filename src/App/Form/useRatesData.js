@@ -1,29 +1,25 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+import { getCurrenciesDataFromApi } from "./api";
 
 export const useRatesData = () => {
   const [ratesData, setRatesData] = useState({
     state: "loading",
+    rates: null,
+    date: null,
   });
 
   useEffect(() => {
     const fetchRates = async () => {
       try {
-        const response = await fetch(
-          "https://api.currencyapi.com/v3/latest?apikey=cur_live_LO7p2dI7bDzYx6BoNIu3lkBEizY7erOuZRLC3pxW&currencies=EUR%2CUSD%2CCAD&base_currency=PLN"
-        );
-
-        if (!response.ok) {
-          throw new Error(response.statusText);
-        }
-
-        const { rates, date } = await response.json();
+        const response = await getCurrenciesDataFromApi();
+        const { last_updated_at } = response.meta;
 
         setRatesData({
           state: "success",
-          rates,
-          date,
+          rates: response.data,
+          date: last_updated_at,
         });
-      } catch {
+      } catch (err) {
         setRatesData({
           state: "error",
         });
